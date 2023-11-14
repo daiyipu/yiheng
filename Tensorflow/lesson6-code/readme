@@ -1,0 +1,2 @@
+对于tensorboard讲解部分，参考cifar10.py.
+对于官方样例部分，请参考https://github.com/tensorflow/models/tree/master/tutorials/image/cifar10
