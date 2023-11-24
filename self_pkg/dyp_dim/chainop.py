@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+
 # 从树状结构转换到二元组结构
 def node_trans(df):
     all_list=[]
