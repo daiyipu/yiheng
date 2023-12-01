@@ -97,9 +97,10 @@ def triple_to_tree(root_id,input_relation_df='origin_rlt_pd',input_node_df='targ
         else:
             for idx in output_df.index:
                 for node in nodes:
-                    if z[1][z[2]==node].values==output_df.loc[idx,'level'+str(i-1)]:
-                        new_row = output_df.iloc[idx]#该行值保存
-                        output_df=output_df.append(new_row, ignore_index=True)
+                    if z[1][z[2]==node].values.size>0 and z[1][z[2]==node].values==output_df.loc[idx,'level'+str(i-1)]:
+                        new_row = output_df[output_df.index==idx]#该行值保存
+                        output_df=pd.concat([output_df,new_row],ignore_index=True)
+                        # output_df=output_df.append(new_row, ignore_index=True)
                         output_df.loc[output_df.index[-1], 'level'+str(i)]=node
                         if np.isnan(output_df.loc[idx,'level'+str(i)]):
                             output_df.loc[idx,'level'+str(i)]=node
