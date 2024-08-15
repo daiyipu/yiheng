@@ -80,6 +80,12 @@ class Dog(Animal):
     def __init__(self, name, breed):
         super().__init__(name)
         self.breed = breed
+
+class Bird(Animal):
+    def __init__(self, name, canfly):
+        super().__init__(name)
+        self.canfly=canfly
+
  
 dog = Dog('Sky', 'Corgi')
 # 输出：Sky is eating...
