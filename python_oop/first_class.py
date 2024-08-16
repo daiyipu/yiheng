@@ -49,10 +49,11 @@ class Dog(Animal):
         self.breed = breed
  
     def eat(self):
+        super(Dog,self).eat()
         print(self.breed + " eats more")
  
 dog = Dog('Sky', 'Corgi')
 # 覆盖父类方法，输出：Corgi eats more
 dog.eat()
 # 强制调用父类方法，输出：Sky is eating...
-super(Dog, dog).eat()
+# super(Dog, dog).eat()

@@ -93,3 +93,7 @@ dog.eat()
 # 输出：Corgi
 print(dog.breed)
 ```
+### 继承中super()的用法
+- `super(Child, self).__init__()` 最终调用了 Parent 类的 `__init__ `方法(也可以是其他方法)，但 self 仍然是 Child 类的实例。
+- 这意味着 Parent 类的 `__init__ `方法中的任何操作都是针对Child 类的实例进行的，而不是 Parent 类的实例。
+- `super(Child, self).__init__()`与`super(). __init__()`在新的python3中是一样的。
