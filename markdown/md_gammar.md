@@ -41,8 +41,8 @@ _你也 **组合** 这些符号_
       6. 
 
 四、添加图片 
-![GitHub Logo](/liangheng/markdown/641.webp)
-Format: ![Alt Text](/liangheng/markdown/641.webp)
+![GitHub Logo](/yiheng/markdown/641.webp)
+Format: ![Alt Text](/yiheng/markdown/641.webp)
 
 五、引用
 正如 Kanye West 所说：
@@ -106,7 +106,7 @@ labels = ['A', 'B', 'C']
 plot_bar_chart_with_values(data, labels)
 ```
 十、高亮整体代码
-```ruby
+``` ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
