@@ -1,4 +1,4 @@
-# fillna()使用
+# shelf.fillna()使用
 ### 参数
 - value: 用于填充缺失值的标量值或字典。
 - method: 指定填充方法，如 ‘ffill’ 或 ‘bfill’。
