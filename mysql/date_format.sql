@@ -1,1 +1,0 @@
-SELECT DATE_FORMAT('2022-08-15', '%Y-%m') from  your_table;--取年月日数据为年月
