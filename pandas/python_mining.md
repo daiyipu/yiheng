@@ -29,4 +29,11 @@
 > pd.columns.isin()
 - **补充**
 > pd.select_dtypes
-- include：设置包含列表中的字符类型['number']
+- 参数：include，exclude
+- 参数的类型： scalar or list-like
+- 参数的选项： 
+    - 数值型numeric：'np.number' or 'number'
+    - 字符型string： 'object'
+    - 时间型datetime64： 'np.datetime64','datetime','datetime64'
+    - 类别型categorical：'category'
+    - 判断bool：'bool'
