@@ -29,3 +29,10 @@
     # 查看每个桶的数据点数量
     print(quartiles.value_counts())
     ```
+> pd.\_\_version\_\_
+  
+  查看具体包的版本，这里示例为查看pd的版本
+  另外还有查看的方式
+  1. `!pip show pandas` 在notebook中查看
+  2. `pip show pandas` 在命令行终端查看
+  
