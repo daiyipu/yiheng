@@ -121,3 +121,7 @@
   '''
   2. apply
    applied_df = df.apply(lambda x: x.max() - x.min(), axis=0)
+
+>pd.groupby()
+ - pct_change()
+ - mean()

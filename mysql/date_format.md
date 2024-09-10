@@ -13,3 +13,7 @@ SELECT
 FROM  
   your_table;
   ```
+>窗口函数 rank() over() 
+ ```
+ partition by need_groupby_column_name order by need_orderby_column_name
+ ```
