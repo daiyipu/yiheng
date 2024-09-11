@@ -101,7 +101,9 @@
   ```
 
 > apply,applymap,map用法
-  - apply作用于pd
+  - apply适用于Series和DataFrame
+  - applymap适用于DataFrame，按行（axis=1）还是按列（axis=0，默认值）
+  - map 适用于Series
 
   ```
     df = pd.DataFrame({
@@ -119,3 +121,7 @@
   '''
   2. apply
    applied_df = df.apply(lambda x: x.max() - x.min(), axis=0)
+
+>pd.groupby()
+ - pct_change()
+ - mean()
