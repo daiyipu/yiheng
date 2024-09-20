@@ -1,0 +1,15 @@
+{
+    "_type": "few_shot",
+    "input_variables": ["adjective"],
+    "prefix": "为以下的词写出反义词。",
+    "example_prompt": {
+        "_type": "prompt",
+        "input_variables": ["输入", "输出"],
+        "template": "输入: {输入}\n输出: {输出}"
+    },
+    "examples": [
+        {"输入": "高兴", "输出": "悲伤"},
+        {"输入": "高", "输出": "矮"}
+    ],
+    "suffix": "输入: {adjective}\n输出:"
+}   
