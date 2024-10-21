@@ -1,5 +1,5 @@
 import os
-from crewai.tasks.task_output import TaskOutput
+from crewai import Task
 from langchain_community.llms import Tongyi
 from crewai import Agent, Task, Crew, Process
 from authentications import DASHSCOPE_API_KEY
@@ -13,13 +13,6 @@ from authentications import DASHSCOPE_API_KEY
 os.environ["DASHSCOPE_API_KEY"] = DASHSCOPE_API_KEY
 # langchain模型实例
 llm = Tongyi(model_name="qwen-max")
-
-
-def callback_func(output: TaskOutput) -> None:
-    md_content = f"<p>{output.raw_output}</p>"
-    with open(file="./story.md", mode="a", encoding="utf-8") as f:
-        f.write(md_content)
-    return
 
 
 # 创建Agent：编剧
@@ -92,5 +85,13 @@ story_crew = Crew(
     language="Chinese",
 )
 
+
+task_output = story_task.output
+
+def callback_func(output: TaskOutput) -> None:
+    md_content = f"<p>{output.raw_output}</p>"
+    with open(file="./story.md", mode="a", encoding="utf-8") as f:
+        f.write(md_content)
+    return
 # 执行Crew
 story_output = story_crew.kickoff()

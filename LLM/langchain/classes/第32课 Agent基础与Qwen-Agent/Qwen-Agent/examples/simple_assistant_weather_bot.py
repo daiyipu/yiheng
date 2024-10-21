@@ -71,8 +71,9 @@ def app_tui(query="海淀区天气"):
 
 
 if __name__ == '__main__':
-    from authentications import DASHSCOPE_API_KEY, AMAP_TOKEN
-
+    # from authentications import DASHSCOPE_API_KEY, AMAP_TOKEN
+    DASHSCOPE_API_KEY = os.environ.get('DASHSCOPE_API_KEY')
+    AMAP_TOKEN = os.environ.get('AMAP_TOKEN')
     os.environ["DASHSCOPE_API_KEY"] = DASHSCOPE_API_KEY
     os.environ["AMAP_TOKEN"] = AMAP_TOKEN
     app_tui()
