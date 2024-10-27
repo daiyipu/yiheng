@@ -35,5 +35,8 @@ attrib -s -h -r hosts
 > conda activate qianwen
 - 删除虚拟环境
 > conda env remove --name python36
+- 安装框架
+cd Qwen-Agent
+pip install –e ./
 
 
