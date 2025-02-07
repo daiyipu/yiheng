@@ -4,7 +4,7 @@ import os
 from typing import Optional
 
 from qwen_agent.agents import Assistant
-# from qwen_agent.gui import WebUI
+from qwen_agent.gui import WebUI
 
 ROOT_RESOURCE = os.path.join(os.path.dirname(__file__), 'resource')
 
@@ -63,27 +63,46 @@ def app_tui():
 
         response = []
         for response in bot.run(messages):
-            print('bot response:', response)
+            pass
+            # print('bot response:', response)
         messages.extend(response)
+        print('bot response:', response)
 
 
-# def app_gui():
-#     # Define the agent
-#     bot = init_agent_service()
-#     chatbot_config = {
-#         'prompt.suggestions': [
-#             '查询北京的天气',
-#             '画一张北京的图片',
-#             '画一张北京的图片，然后配上一首诗',
-#         ]
-#     }
-#     WebUI(
-#         bot,
-#         chatbot_config=chatbot_config,
-#     ).run()
-
+def app_gui():
+    # Define the agent
+    bot = init_agent_service()
+    chatbot_config = {
+        'prompt.suggestions': [
+            '查询北京的天气',
+            '画一张北京的图片',
+            '画一张北京的图片，然后配上一首诗',
+        ]
+    }
+    WebUI(
+        bot,
+        chatbot_config=chatbot_config,
+    ).run()
+def app_gui():
+    # Define the agent
+    bot = init_agent_service()
+    file = os.path.join(ROOT_RESOURCE, 'growing_girl.pdf')
+    chatbot_config = {
+        'prompt.suggestions': [
+            {
+                'text': '画一个女孩的成长故事',
+                'files': [file]
+            },
+            {
+                'text': '画一个女孩的成长故事，从小学到大学',
+                'files': [file]
+            },
+            '画出女人的一生，要反映出人类的深刻本质',
+        ]
+    }
+    WebUI(bot, chatbot_config=chatbot_config).run()
 
 if __name__ == '__main__':
     # test()
-    app_tui()
-    # app_gui()
+    # app_tui()
+    app_gui()
