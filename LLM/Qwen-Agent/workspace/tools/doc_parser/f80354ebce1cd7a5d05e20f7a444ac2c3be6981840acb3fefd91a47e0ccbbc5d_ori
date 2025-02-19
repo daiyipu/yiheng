@@ -1,0 +1,76 @@
+[
+  {
+    "page_num": 1,
+    "content": [
+      {
+        "text": "Gradio",
+        "token": 2
+      },
+      {
+        "text": "    Qwen Agent: BrowserQwen",
+        "token": 8
+      },
+      {
+        "text": "  This is the editing workstation of BrowserQwen, where Qwen has collected the browsing history. Qwen can assist you in completing your creative work!",
+        "token": 31
+      },
+      {
+        "text": "    Browsing History",
+        "token": 4
+      },
+      {
+        "text": "   Start Date     End Date\tNo browsing recordsEditor Chat Pure Chat\tInput    Continue Stop Clear Download  Qwen's Inner Thought Markdown HTML Raw\tUsage Tips:",
+        "token": 33
+      },
+      {
+        "text": "Browsing History:",
+        "token": 4
+      },
+      {
+        "text": "Start Date/End Date: Selecting the browsed materials for the desired time period, including the start and end dates",
+        "token": 24
+      },
+      {
+        "text": "The browsed materials list: supporting the selection or removal of specific browsing content",
+        "token": 15
+      },
+      {
+        "text": "Editor: In the editing area, you can directly input content or special instructions, and then click the Continue button to have Qwen assist in completing the editing work:",
+        "token": 33
+      },
+      {
+        "text": "After inputting the content, directly click the Continue button: Qwen will begin to continue writing based on the browsing information",
+        "token": 24
+      },
+      {
+        "text": "Using special instructions:",
+        "token": 4
+      },
+      {
+        "text": "/title + content: Qwen enables the built-in planning process and writes a complete manuscript",
+        "token": 17
+      },
+      {
+        "text": "/code + content: Qwen enables the code interpreter plugin, writes and runs Python code, and generates replies",
+        "token": 21
+      },
+      {
+        "text": "/plug + content: Qwen enables plugin and select appropriate plugin to generate reply",
+        "token": 16
+      },
+      {
+        "text": "Chat: Interactive area. Qwen generates replies based on given reference materials. Selecting Code Interpreter will enable the code interpreter plugin",
+        "token": 25
+      },
+      {
+        "text": "    Chatbot      Upload  Textbox   Clear  Stop  Again   Plugin      The uploaded file is displayed here    Note: The chat box on this tab will not use any browsing history!",
+        "token": 39
+      },
+      {
+        "text": "   Chatbot    Textbox   Clear  Stop  Again 通过 API 使用  · 使用 Gradio 构建   ",
+        "token": 25
+      }
+    ],
+    "title": "Gradio"
+  }
+]

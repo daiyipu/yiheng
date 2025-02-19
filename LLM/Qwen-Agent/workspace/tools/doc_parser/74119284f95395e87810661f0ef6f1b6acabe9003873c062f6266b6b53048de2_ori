@@ -1,0 +1,800 @@
+[
+  {
+    "page_num": 1,
+    "content": [
+      {
+        "text": "Tushare数据",
+        "token": 4
+      },
+      {
+        "text": "Toggle navigation",
+        "token": 2
+      },
+      {
+        "text": "首页",
+        "token": 1
+      },
+      {
+        "text": "平台介绍",
+        "token": 2
+      },
+      {
+        "text": "数据接口",
+        "token": 2
+      },
+      {
+        "text": "资讯数据",
+        "token": 2
+      },
+      {
+        "text": "数据工具",
+        "token": 2
+      },
+      {
+        "text": "登 录注 册",
+        "token": 6
+      },
+      {
+        "text": " 沪深股票 基础数据 行情数据 日线行情 周线行情 月线行情 股票周/月线行情(每日更新) 股票周/月线行情(复权--每日更新) 复权行情 复权因子 实时行情（爬虫） 实时成交（爬虫） 实时排名（爬虫） 每日指标 通用行情接口 每日涨跌停价格 每日停复牌信息 沪深股通十大成交股 港股通十大成交股 港股通每日成交统计 港股通每月成交统计 备用行情 财务数据 参考数据 特色数据 两融及转融通 资金流向数据 打板专题数据 指数专题 公募基金 期货数据 现货数据 期权数据 债券专题 外汇数据 港股数据 美股数据 行业经济 宏观经济 另类数据 财富管理 数据索引 社区捐助",
+        "token": 194
+      },
+      {
+        "text": "备用行情",
+        "token": 2
+      },
+      {
+        "text": "接口：bak_daily描述：获取备用行情，包括特定的行情指标(数据从2017年中左右开始，早期有几天数据缺失，近期正常)限量：单次最大7000行数据，可以根据日期参数循环获取，正式权限需要5000积分。",
+        "token": 63
+      },
+      {
+        "text": "输入参数",
+        "token": 2
+      },
+      {
+        "text": "名称",
+        "token": 1
+      },
+      {
+        "text": "类型",
+        "token": 1
+      },
+      {
+        "text": "必选",
+        "token": 2
+      },
+      {
+        "text": "描述",
+        "token": 1
+      },
+      {
+        "text": "ts_code",
+        "token": 2
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "N",
+        "token": 1
+      },
+      {
+        "text": "股票代码",
+        "token": 2
+      },
+      {
+        "text": "trade_date",
+        "token": 2
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "N",
+        "token": 1
+      },
+      {
+        "text": "交易日期",
+        "token": 2
+      },
+      {
+        "text": "start_date",
+        "token": 2
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "N",
+        "token": 1
+      },
+      {
+        "text": "开始日期",
+        "token": 2
+      },
+      {
+        "text": "end_date",
+        "token": 2
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "N",
+        "token": 1
+      },
+      {
+        "text": "结束日期",
+        "token": 2
+      },
+      {
+        "text": "offset",
+        "token": 1
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "N",
+        "token": 1
+      },
+      {
+        "text": "开始行数",
+        "token": 3
+      },
+      {
+        "text": "limit",
+        "token": 1
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "N",
+        "token": 1
+      },
+      {
+        "text": "最大行数",
+        "token": 3
+      },
+      {
+        "text": "输出参数",
+        "token": 2
+      },
+      {
+        "text": "名称",
+        "token": 1
+      },
+      {
+        "text": "类型",
+        "token": 1
+      },
+      {
+        "text": "默认显示",
+        "token": 2
+      },
+      {
+        "text": "描述",
+        "token": 1
+      },
+      {
+        "text": "ts_code",
+        "token": 2
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "股票代码",
+        "token": 2
+      },
+      {
+        "text": "trade_date",
+        "token": 2
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "交易日期",
+        "token": 2
+      },
+      {
+        "text": "name",
+        "token": 1
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "股票名称",
+        "token": 2
+      },
+      {
+        "text": "pct_change",
+        "token": 3
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "涨跌幅",
+        "token": 2
+      },
+      {
+        "text": "close",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "收盘价",
+        "token": 2
+      },
+      {
+        "text": "change",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "涨跌额",
+        "token": 3
+      },
+      {
+        "text": "open",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "开盘价",
+        "token": 2
+      },
+      {
+        "text": "high",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "最高价",
+        "token": 2
+      },
+      {
+        "text": "low",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "最低价",
+        "token": 2
+      },
+      {
+        "text": "pre_close",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "昨收价",
+        "token": 3
+      },
+      {
+        "text": "vol_ratio",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "量比",
+        "token": 2
+      },
+      {
+        "text": "turn_over",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "换手率",
+        "token": 3
+      },
+      {
+        "text": "swing",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "振幅",
+        "token": 2
+      },
+      {
+        "text": "vol",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "成交量",
+        "token": 1
+      },
+      {
+        "text": "amount",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "成交额",
+        "token": 2
+      },
+      {
+        "text": "selling",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "内盘（主动卖，手）",
+        "token": 8
+      },
+      {
+        "text": "buying",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "外盘（主动买， 手）",
+        "token": 9
+      },
+      {
+        "text": "total_share",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "总股本(亿)",
+        "token": 5
+      },
+      {
+        "text": "float_share",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "流通股本(亿)",
+        "token": 5
+      },
+      {
+        "text": "pe",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "市盈(动)",
+        "token": 5
+      },
+      {
+        "text": "industry",
+        "token": 1
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "所属行业",
+        "token": 2
+      },
+      {
+        "text": "area",
+        "token": 1
+      },
+      {
+        "text": "str",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "所属地域",
+        "token": 2
+      },
+      {
+        "text": "float_mv",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "流通市值",
+        "token": 2
+      },
+      {
+        "text": "total_mv",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "总市值",
+        "token": 2
+      },
+      {
+        "text": "avg_price",
+        "token": 2
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "平均价",
+        "token": 2
+      },
+      {
+        "text": "strength",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "强弱度(%)",
+        "token": 5
+      },
+      {
+        "text": "activity",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "活跃度(%)",
+        "token": 4
+      },
+      {
+        "text": "avg_turnover",
+        "token": 3
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "笔换手",
+        "token": 3
+      },
+      {
+        "text": "attack",
+        "token": 1
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "攻击波(%)",
+        "token": 4
+      },
+      {
+        "text": "interval_3",
+        "token": 3
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "近3月涨幅",
+        "token": 4
+      },
+      {
+        "text": "interval_6",
+        "token": 3
+      },
+      {
+        "text": "float",
+        "token": 1
+      },
+      {
+        "text": "Y",
+        "token": 1
+      },
+      {
+        "text": "近6月涨幅",
+        "token": 4
+      },
+      {
+        "text": "接口示例",
+        "token": 3
+      },
+      {
+        "text": "pro = ts.pro_api()",
+        "token": 6
+      },
+      {
+        "text": "df = pro.bak_daily(trade_date='20211012', fields='trade_date,ts_code,name,close,open')",
+        "token": 32
+      },
+      {
+        "text": "数据样例",
+        "token": 3
+      },
+      {
+        "text": "    ts_code     trade_date      name  close   open",
+        "token": 12
+      },
+      {
+        "text": "0     300605.SZ   20211012  恒锋信息  14.86  12.65",
+        "token": 41
+      },
+      {
+        "text": "1     301017.SZ   20211012  漱玉平民  25.21  20.82",
+        "token": 41
+      },
+      {
+        "text": "2     300755.SZ   20211012  华致酒行  40.45  37.01",
+        "token": 41
+      },
+      {
+        "text": "3     300255.SZ   20211012  常山药业   8.39   7.26",
+        "token": 39
+      },
+      {
+        "text": "4     688378.SH   20211012   奥来德  68.62  67.00",
+        "token": 40
+      },
+      {
+        "text": "4529  688257.SH   20211012  新锐股份   0.00   0.00",
+        "token": 39
+      },
+      {
+        "text": "4530  688255.SH   20211012   凯尔达   0.00   0.00",
+        "token": 40
+      },
+      {
+        "text": "4531  688211.SH   20211012  中科微至   0.00   0.00",
+        "token": 40
+      },
+      {
+        "text": "4532  605567.SH   20211012  春雪食品   0.00   0.00",
+        "token": 40
+      },
+      {
+        "text": "4533  605566.SH   20211012  福莱蒽特   0.00   0.00",
+        "token": 42
+      },
+      {
+        "text": "使用文档",
+        "token": 2
+      },
+      {
+        "text": "平台介绍",
+        "token": 2
+      },
+      {
+        "text": "数据接口",
+        "token": 2
+      },
+      {
+        "text": "区块链",
+        "token": 1
+      },
+      {
+        "text": "资讯数据",
+        "token": 2
+      },
+      {
+        "text": "关注我们",
+        "token": 2
+      },
+      {
+        "text": "QQ群: 958517905",
+        "token": 13
+      },
+      {
+        "text": "公众号：waditu",
+        "token": 5
+      },
+      {
+        "text": "Github：https://github.com/waditu",
+        "token": 9
+      },
+      {
+        "text": "雪 球：https://xueqiu.com/u/9103835084",
+        "token": 24
+      },
+      {
+        "text": "微 博：https://weibo.com/u/1304687120",
+        "token": 21
+      },
+      {
+        "text": "© 2018 Tushare ",
+        "token": 10
+      },
+      {
+        "text": "\"沪ICP备2020031644号\"",
+        "token": 17
+      },
+      {
+        "text": "置顶",
+        "token": 2
+      }
+    ],
+    "title": "Tushare数据"
+  }
+]
