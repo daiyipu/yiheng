@@ -21,3 +21,6 @@ class Item(BaseModel):
 @app.post("/items/")
 def create_item(item: Item):
     return item
+
+#参照
+#https://www.runoob.com/fastapi/fastapi-request-response.html
