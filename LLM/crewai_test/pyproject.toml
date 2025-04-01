@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "crewai_test"
+version = "0.1.0"
+description = "crewai_test using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.70.1,<1.0.0" }
+
+
+[tool.poetry.scripts]
+crewai_test = "crewai_test.main:run"
+run_crew = "crewai_test.main:run"
+train = "crewai_test.main:train"
+replay = "crewai_test.main:replay"
+test = "crewai_test.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
