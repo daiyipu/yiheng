@@ -10,7 +10,26 @@ ROOT_RESOURCE = os.path.join(os.path.dirname(__file__), 'resource')
 
 
 def init_agent_service():
-    llm_cfg = {'model': 'qwen-max'}
+    # llm_cfg = {'model': 'qwen-max'}
+    llm_cfg={
+        'api_key':os.getenv("ARK_API_KEY"),
+        'base_url':"https://ark.cn-beijing.volces.com/api/v3",
+        'model': "deepseek-r1-250120"
+        }#火山大模型
+    llm_cfg2={
+        'api_key':os.getenv("DEEPSEEK_API_KEY"),
+        'base_url':"https://api.deepseek.com/v1",
+        'model': "deepseek-reasoner"
+        }#deepseek大模型
+    llm_cfg3={'model': 'qwen-plus'}
+    llm_cfg4 = {
+    'model': 'qwq-32b',
+    'model_type': 'qwen_dashscope',
+    'generate_cfg': {
+        'fncall_prompt_type': 'nous'
+    }
+    }
+
     tools = ['image_gen']
     bot = Assistant(
         llm=llm_cfg,
